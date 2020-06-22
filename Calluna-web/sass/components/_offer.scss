@@ -1,0 +1,81 @@
+.offer-box {
+  
+    border-radius: 3px;
+    font-size: 2rem;
+
+    &-1 {
+        padding-right: 1rem;
+    }
+    &-2 {
+        padding: 0 1rem;
+    }
+    &-3 {
+        padding-left: 1rem;
+    }
+    &__photo-box {
+        background-image: linear-gradient(to top right, #53062a, $color-black);
+        box-shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.5);
+        width: 100%;
+        // border: 1px solid white;
+        height: 36.5rem;
+        overflow: hidden ;
+        border-radius: 3px;
+        
+        &--photo {
+            overflow: hidden ;
+            border-radius: 5px;
+            height: 100%;
+            opacity: .4;
+            transform: scale(1.08);
+
+            transition: .2s;
+            
+        
+            &:hover {
+                opacity: 1; 
+                transform: scale(1);
+            }
+
+        
+            
+
+        }
+        &--masterclass {
+            
+        }
+        &--cigars {
+            
+        }
+        &--hire {
+            
+        }
+    }
+    &__heading {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: .3rem;
+        line-height: 110%;
+        margin-bottom: .5rem;
+        color: $color-white;
+        margin-top: 1.5rem;
+    }
+    &__sub {
+        margin-bottom: 1rem;
+        
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+    &__text {
+        font-weight: 200;
+
+    }
+    &__cigars {
+        list-style: none;
+        line-height: 200%;
+        font-size: 2rem;
+        font-weight: 100;
+        
+    }
+
+}

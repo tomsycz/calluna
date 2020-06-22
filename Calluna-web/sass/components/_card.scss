@@ -1,0 +1,89 @@
+.card {
+    border-radius: 3px;
+    box-shadow: 0 2rem 5rem rgba($color-black, .4);
+    text-align: left;
+    position: relative;
+    outline-offset: 1rem;
+    transition: all .2s;
+    &:hover {
+        filter: contrast(120%);
+ 
+        outline: .5rem solid $color-primary-light;
+    }
+    &__picture {
+    height: 40rem;
+    background-position: center;
+    // background-blend-mode: overlay;
+    background-size: cover;
+    border-radius: 3px;
+        &--small {
+        height: 30rem;
+        background-position: center;
+        // background-blend-mode: overlay;
+        background-size: cover;
+        border-radius: 3px;
+        }
+        &--1 {
+            background-image: 
+            linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-1.png);
+            overflow: hidden;            
+        }
+        &--2 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-2.png);
+        }
+        &--3 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-3.png);
+        }
+        &--4 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-4.png);
+        }
+        &--5 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-5.png);
+        }
+        &--6 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-6.png);
+        }
+    }
+    &__name {
+        position:absolute;
+        border-bottom: 1px solid $color-white;
+        line-height: 125%;
+        top: 45%;
+        left: 10%;
+        font-size: 8rem;
+        font-weight: 700;
+        &-small {
+            position:absolute;
+            top: 60%;
+            left: 10%;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 95%;
+        }
+    } 
+    &__des {
+        position:absolute;
+      
+        left: 10%;
+        top: 73%;
+        &-small {
+            position:absolute;
+            left: 5%;
+            top: 75%;
+        }
+    }
+    &__links {
+        position:absolute;
+        word-spacing: 3rem;
+        left: 10%;
+        top: 90%;
+        &-small {
+            position:absolute;
+            word-spacing: 3rem;
+            left: 10%;
+            top: 89%;
+        }
+
+    }
+
+}

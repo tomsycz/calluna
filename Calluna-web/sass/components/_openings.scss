@@ -1,0 +1,25 @@
+.openings {
+        margin-bottom: 3rem;
+        text-align: center;
+        // margin-top: 18rem;
+
+    &__days {
+       text-align: right;
+       padding-right: 4rem;
+        &--list {
+            list-style: none;
+        }
+    }
+    &__hours {
+
+        &--list {
+            list-style: none;
+            word-spacing: 1.5rem;
+        }
+    }
+    &__days-hours{
+        font-size: 2.4rem;
+        font-weight: 100;
+    }
+}
+

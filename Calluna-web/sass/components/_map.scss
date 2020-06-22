@@ -1,0 +1,17 @@
+#map {
+    height: 45rem;
+    width: 100%;
+  }
+  .map {
+      opacity: .75;
+      transition: .4s;
+      &:hover {
+          opacity: 1;
+          transform: scale(1.02);
+      }
+  }
+.map-box {
+    width: 100vw;
+    display: inline-block;
+    float: left;
+}

@@ -1,0 +1,77 @@
+.deal {
+    &__showcase {
+        width: 100%;
+        list-style: none;
+        height: 17rem;
+        & li {
+            width: 50%;
+            display: block;
+            float: left;
+        }
+    } 
+    &__box {
+        height: 15rem;
+    
+    }
+    &__text {
+        text-align: left;
+        padding: 2rem 3rem;
+        color: white;
+        text-transform: uppercase;
+        &--name {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: left;
+            letter-spacing: .3rem;
+            line-height: 120%;
+        }
+        &--when {
+            font-size: 2rem;
+            font-weight: 900;
+            line-height: 115%;
+            letter-spacing: .5rem;
+        } 
+        &--what {
+            font-size: 4rem;
+            font-weight: 200;
+            line-height: 120%;
+            
+        }
+        &--wed {
+            font-size: 1.6rem;
+            font-weight: 200;
+            line-height: 120%;
+            letter-spacing: .4rem;
+            
+        }
+        &--thur {
+            font-size: 3rem;
+            font-weight: 200;
+            line-height: 120%;
+            letter-spacing: .4rem;
+        }
+        &--small-print {
+            letter-spacing: .5rem;
+            font-size: 1.4rem;
+        }
+    }
+}
+.background-image {
+        background-image: linear-gradient(to top right, rgba(#53062a, 1), rgba(#53062a, 0.6)), url(../img/deals.jpg);
+        background-size: 100%;
+        filter: grayscale(.3); 
+        background-position: center;
+
+        -webkit-transition: .2s -webkit-filter linear;
+        -moz-transition: .2s -moz-filter linear;
+        -moz-transition: .2s filter linear;
+        -ms-transition: .2s -ms-filter linear;
+        -o-transition: .2s -o-filter linear;
+        transition: .2s all linear, .2s -webkit-filter linear;
+      
+        &:hover {
+            filter: grayscale(.2) contrast(1.2);
+    
+        }
+
+}
