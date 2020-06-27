@@ -68,10 +68,13 @@ body {
   background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.5), rgba(255, 0, 140, 0.8)), url(../img/background.jpg);
   background-attachment: fixed;
   background-position: top;
-  background-size: 100% 100%; }
+  background-size: cover; }
   @media (max-width: 37.5em) {
     body {
-      background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.5), rgba(255, 0, 140, 0.8)), url(../img/background-mobile.jpg); } }
+      background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.5), rgba(255, 0, 140, 0.8)), url(../img/background-mobile.jpg);
+      background-attachment: local;
+      background-size: contain;
+      background-position: center; } }
 
 .u-center-text {
   text-align: center; }
@@ -1054,7 +1057,8 @@ footer p {
       top: 4.5rem;
       right: 4.5rem;
       height: 5rem;
-      width: 5rem; } }
+      width: 5rem;
+      background-image: radial-gradient(#b9006f, #493240); } }
   @media (max-width: 28.125em) {
     .navigation__background {
       top: 3.5rem;
