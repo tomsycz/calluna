@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 var marker;
 
-function initMap() {
+initMap = function() {
     // Styles a map in night mode.
     var uluru = {lat: 52.955566, lng: -1.149557};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -127,7 +127,8 @@ function initMap() {
         marker.setAnimation(google.maps.Animation.BOUNCE);
         marker.addListener('click', toggleBounce);
   }
-
+  
+  initMap()
 function toggleBounce() {
   if (marker.getAnimation() !== null) {
     marker.setAnimation(null);
