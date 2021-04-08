@@ -1,0 +1,37 @@
+.social {
+    &-link {
+    text-decoration: none;
+    color: white;
+    
+    }
+    &-icon {
+        &-small {
+        font-size: 2.4rem;
+        transition: .2s;
+        @include respond(750p) {
+            font-size: 3rem;
+        }
+            &:hover {
+                color: $color-primary-light;
+                // text-shadow: 0 0 1rem rgba($color-white, .5);
+            }
+    }
+        &-big {
+            font-size: 3.2rem;
+            transition: .2s;;
+            &:hover {
+                color: $color-sec-light-super;
+                // text-shadow: 0 0 1rem rgba($color-white, .5);
+
+            }
+            @include respond(750p) {
+                font-size: 4rem;
+            }
+            @include respond(450p) {
+                font-size: 3.5rem;
+            }
+        
+        }
+    }
+    
+}

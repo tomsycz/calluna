@@ -1,0 +1,61 @@
+
+.header {
+    height: 100vh;
+    /* 95% of viewport height */
+    
+    // ALTERNATIVE BACKGROUND STYLE
+    // background-blend-mode: color;
+    // background-image: linear-gradient( to bottom left ,
+    // rgba($color-primary-dark, .5),
+    // rgba($color-primary, .5)), url(../img/hero.jpg);
+    // // bac: linear-gradient(to bottom, #ffffff00 90%, #8d0846);
+    // color: #250715
+    background-image: linear-gradient( to bottom left ,
+    rgba($color-black, .5),
+    rgba($color-primary, .5)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    backface-visibility: hidden;
+    box-shadow: 0 1rem 10rem rgba($color-black, .3);
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 53% 100%, 50% 90%, 47% 100%, 0 100%);
+    &__logo {
+        // text-align: center;
+        font-size: 10rem;
+        display: inline-block;
+        text-shadow: 0 .3rem .5rem rgba($color-black, .7);
+        color: $color-white;
+        animation: moveInTop 2s ease-out;
+    }
+    
+    &__logo-box {
+        
+        text-align: center;
+
+    }
+    &__heading-box {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50vh;
+        left: 50%;
+        &-trace {
+            transform: translate(0%, 50%);
+            top: 20vh;
+        };
+    }    
+}
+
+.arrow {
+    // text-align: center;
+    bottom: 1rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    &-down { 
+        filter: invert(1);
+        height: 6rem;
+        animation: moveInTop--2 1.5s infinite;
+          
+    }
+}

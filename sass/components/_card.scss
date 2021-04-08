@@ -1,0 +1,221 @@
+.card {
+    border-radius: 3px;
+    box-shadow: 0 2rem 5rem rgba($color-black, .4);
+    text-align: left;
+    position: relative;
+    outline-offset: 1rem;
+    transition: all .2s; 
+    
+    &:hover {
+        filter: contrast(120%);
+        outline: .5rem solid $color-primary-light;
+        @include respond(750p) {
+            outline: none;
+            filter: none;
+        }
+    }
+    &-small {
+        @include respond(750p) {
+            width: 49%;
+            position: absolute;
+            &--1 {
+                
+            }
+            &--2 {
+                left:51%;
+                top: -3rem
+            }
+            &--3 {
+                top: 25rem;
+            }
+            &--4 {
+                left: 51%;
+                top: 22rem;
+            }
+        }
+        @include respond(380p) {
+            width: 100%;
+            position: absolute;
+            &--1 {
+                
+            }
+            &--2 {
+                left:0;
+                top: 18rem
+            }
+            &--3 {
+                top: 36rem;
+            }
+            &--4 {
+                left: 0;
+                top: 54rem;
+            }
+        }
+    }
+    &__picture {
+    height: 40rem;
+    background-position: center;
+    // background-blend-mode: overlay;
+    background-size: cover;
+    border-radius: 3px;
+    
+        &--small {
+        height: 30rem;
+        background-position: center;
+        // background-blend-mode: overlay;
+        background-size: cover;
+        border-radius: 3px;
+        @include respond(380p) {
+           height: 20rem;
+        }
+        }
+        &--1 {
+            background-image: 
+            linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-1.jpg);
+            overflow: hidden;            
+        }
+        &--2 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-2.jpg);
+        }
+        &--3 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-3.jpg);
+        }
+        &--4 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-4.jpg);
+        }
+        &--5 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-5.jpg);
+        }
+        &--6 {
+            background-image: linear-gradient(to bottom left, rgba($color-sec-light, .4), rgba($color-primary-dark, .9)), url(../img/dj-6.jpg);
+        }
+    }
+    &__name {
+        position:absolute;
+        border-bottom: 1px solid $color-white;
+        line-height: 125%;
+        top: 45%;
+        left: 10%;
+        font-size: 8rem;
+        font-weight: 700;
+
+        @include respond(900p) {
+            font-size: 7rem;
+            top: 43%;
+            left: 7.5%
+        }
+        @include respond(750p) {
+            transform: translate(-50%,-50%);
+            top: 60%;
+            left: 50%;
+            font-size: 6rem;
+        }
+        @include respond(600p) {
+            top: 58%;
+            font-size: 4.5rem;
+        }
+        @include respond(450p) {
+            transform: translate(0,-50%);
+            top: 58%;
+            left: 5%;
+        }
+        &-small {
+            position:absolute;
+            top: 60%;
+            left: 10%;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 95%;
+            @include respond(1200p) {
+                font-size: 3.5rem;
+                left: 5%
+            }
+            @include respond(380p) {
+                font-size: 3rem;
+                letter-spacing: .3rem;
+                top: 45%;
+            }
+        }
+    } 
+    &__des {
+        position:absolute;
+        left: 10%;
+        top: 73%;
+        @include respond(1200p) {
+            padding-right: 1rem;
+        }
+        @include respond(900p) {
+            top: 67%;
+            left: 7.5%
+        }
+        @include respond(750p) {
+            top:73%;
+            left: 0;
+            margin:0 5rem;
+            text-align: center; 
+        }
+        @include respond(600p) {
+            top:67%;
+            margin:0 3rem;
+         
+        }
+        @include respond(450p) {
+            left: 5%;
+            margin: 0;
+            text-align: left;
+            top:67%;
+
+        }
+        &-small {
+            position:absolute;
+            left: 5%;
+            top: 75%;
+        }
+    }
+    &__links {
+        position:absolute;
+        transform: translate(-50%,-50%);
+
+        word-spacing: 3rem;
+        left: 50%;
+        top: 93%;
+        @include respond(450p) {
+            word-spacing: 3rem;
+            transform: translate(0,0);
+            left: 5%;
+            top: 89%;
+         }
+        &-small {
+            position:absolute;
+            word-spacing: 3rem;
+            left: 10%;
+            top: 89%;
+            @include respond(1200p) {
+                left: 5%;
+            }
+            @include respond(750p) {
+                top: 86%
+            }
+            @include respond(450p) {
+               word-spacing: 2rem;
+            }
+            @include respond(380p) {
+                word-spacing: 4rem;
+                top: 80%;
+               
+             }
+        }
+
+    }
+
+}
+.guest-cards {
+   @include respond(750p) {
+    height: 50rem
+   }
+   @include respond(380p) {
+    height: 85rem
+
+   }
+    
+}

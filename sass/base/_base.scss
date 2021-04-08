@@ -1,0 +1,56 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0px;
+    box-sizing: inherit;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    @include respond(1200p) {
+    }
+    @include respond(900p) {
+        font-size: 57.5%;
+        
+    }
+    @include respond(750p) {
+        font-size: 55%;
+    }
+    @include respond(600p) {
+        // font-size: 40%;
+        
+    }
+    @include respond(380p) {
+        
+    }
+
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    background-image: linear-gradient( to bottom left,
+    rgba($color-black, 0.5),
+    rgba($color-primary, 0.8)),url(../img/background.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    
+    @include respond(600p) {
+        background-image: linear-gradient( to bottom left,
+        rgba($color-black, 0.5),
+        rgba($color-primary, 0.8)),url(../img/background-mobile.jpg);
+        background-attachment: local;
+        background-size: contain;
+        background-position: center;
+
+
+    }
+}
+::selection {
+    background-color: $color-primary-dark;
+    color: $color-white;
+}

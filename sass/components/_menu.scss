@@ -1,0 +1,185 @@
+.menu {
+    position: relative;
+    height: 60rem;
+
+    &__photo {
+        width: 16%;
+        position: absolute;
+        border-radius: 2px;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+        cursor: context-menu;
+        
+        &--p1 {
+            left: 0%;
+            top: 0;
+            &:not(:hover) + .menu__page--des {
+                opacity:0;
+                transform: translateY(-5rem);;
+            }
+        }
+        &--p2 {
+            left: 16.5%;
+            top: 0rem;
+            &:not(:hover) + .menu__page--des {
+                opacity:0;
+                transform: translateY(-5rem);;
+            }
+        }
+        &--p3 {
+            left: 33%;
+            z-index: 9;
+            top: 0;
+            &:not(:hover) + .menu__page--des {
+                opacity:0;
+                transform: translateY(-5rem);;
+            }
+        }
+        &--p4 {
+            left: 49.5%;
+            top: 0;
+            &:not(:hover) + .menu__page--des {
+                opacity:0;
+                transform: translateY(-5rem);;
+            }
+        }
+        &--p5 {
+            left: 66%;
+            top: 0rem;
+            &:not(:hover) + .menu__page--des {
+                opacity:0;
+                transform: translateY(-5rem);;
+            }
+        }
+        &--p6 {
+            left: 82.5%;
+        
+            top: 0;
+            &:not(:hover) + .menu__page--des {
+                opacity:0;
+                transform: translateY(-5rem);;
+            }
+        }
+        &:hover {
+           
+            transform: scale(1.3) translateY(-.5rem);
+            opacity: 1;
+           
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+    &:hover &__photo:not(:hover) {
+        transform: scale(.97) translateY(.2rem);
+        opacity: .3;
+    }
+    &__page-5 {
+        
+    }
+    &__page--des {
+        position: absolute;
+        top: 30rem;
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s;
+    }
+    &__element {
+        text-align: center;
+        color: white; 
+        cursor: default;
+        
+        &--name{
+            font-size: 2.4rem;
+            font-weight: 300;
+        }
+        &--ing{
+            text-shadow: 0 0 .5rem rgba($color-primary, .5);
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            word-spacing: .5rem;
+            margin-top: .8rem;
+            color: $color-sec-light-super
+        }
+        &--des{
+            padding: .8rem 2rem;
+            font-size: 1.5rem;
+            
+        }
+        &--items {
+            text-transform: uppercase;
+            text-align: left;
+        }
+        &--prices {
+            text-transform: uppercase;
+            text-align: left;
+            word-spacing: 1.2rem;
+            letter-spacing: .2rem;
+            
+        }
+        
+        &--list {
+            list-style: none;  
+            &-price {
+                word-spacing: 2rem;
+                letter-spacing: .3rem;
+
+            }
+        }
+        &--subcat {
+            font-weight: 700;
+            color: $color-sec-light;
+            letter-spacing: .5rem;
+        }
+        &--subcat-w {
+            font-weight: 700;
+            color: $color-sec-light;
+            word-spacing: 2.7rem;
+            @include respond(1200p) {
+                word-spacing: 2.7rem;
+                }
+        }
+    }  
+    &-mobile {
+        text-align: center;
+        &__front {
+            
+            
+            &--img {
+                width: 50%;
+                box-shadow: 0rem 0rem 5rem black;
+                transition: all .2s;
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0rem 0rem 5rem rgba($color-sec-light, .3);
+                }
+                &:active {
+                    box-shadow: 0rem 0rem 4rem rgba($color-sec-light, .5);
+                    transform: scale(1.02);
+                } 
+            }
+        }
+    }  
+}
+
+.wine {
+    padding: .5rem 0;
+
+    &--name {
+
+    }
+    &--orgin {
+        font-size: 1.4rem;
+        font-style: italic;
+        overflow: hidden;
+    }
+    &--price {
+        letter-spacing: .5rem;
+        word-spacing: 1rem;
+        &-dec {
+            word-spacing: .15rem;
+        }
+    }
+
+}
+

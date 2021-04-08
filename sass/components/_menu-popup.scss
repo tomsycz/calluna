@@ -1,0 +1,157 @@
+.popup-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, 0.8);
+    width: 100%;
+    height: 150vh;
+    z-index: 3000;
+    &--1 {
+        opacity: 0;
+        visibility: hidden;
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &--2 {
+        opacity: 0;
+        visibility: hidden;
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &--3 {
+        opacity: 0;
+        visibility: hidden;
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &--4 {
+        opacity: 0;
+        visibility: hidden;
+        
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &--5 {
+        opacity: 0;
+        visibility: hidden;
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &--6 {
+        opacity: 0;
+        visibility: hidden;
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+
+
+
+
+
+    &__content {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        
+    }
+    &__photo {
+        & img {
+            height: 90vh;
+            @include respond(600p) {
+                height: 80vh;
+            }
+            @include respond(450p) {
+                width: 95vw;
+                height: auto;
+            }
+        }
+    }
+    &__navi {
+        // position: relative;
+        color: white;
+        font-size: 5rem;
+        text-decoration: none;
+        &--left {
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: white;
+                position: absolute;
+                top: 50%;
+                font-size: 4rem;
+                left: -3.3rem;
+                transform: translate(-50%,-50%);
+                line-height: 1000%;
+                width: 20rem;
+                padding-left: 10rem;
+                @include respond(600p) {
+                    font-size: 3.2rem;
+                    left: 1rem;
+                }
+                @include respond(450p) {
+                    font-size: 2.5rem;
+                    left: 0rem;
+                }
+
+            }
+        }
+        &--right {
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: white;
+                position: absolute;
+                top: 50%;
+                font-size: 4rem;
+                right: -21rem;
+                transform: translate(-50%,-50%);
+                line-height: 1000%;
+                width: 20rem;
+                padding-left: 10rem;
+                transition: all .2s;
+                @include respond(600p) {
+                    font-size: 3.2rem;
+                    right: -17.4rem;
+                }
+                @include respond(450p) {
+                    font-size: 2.5rem;
+                    right: -18.4rem;
+                }
+            }
+            
+        }
+        &--close {
+            &:link,
+            &:visited {
+            color: white;
+            position: absolute;
+            top: -1rem;
+            right: -3rem;
+            font-size: 4rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;    
+            z-index: 5000;
+            line-height: 200%;
+            padding: 0 5rem;
+        }
+
+        }
+    }
+
+}

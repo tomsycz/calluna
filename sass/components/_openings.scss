@@ -1,0 +1,70 @@
+.openings {
+        margin-bottom: 3rem;
+        text-align: center;
+        // margin-top: 18rem;
+        @include respond(380p) {
+        margin-top: 10rem;
+        margin-bottom: 4rem;
+        }
+    &__days {
+       float: left;
+       margin-left: 6rem;
+       text-align: right; 
+       @include respond(1200p) {
+        margin-left: 2rem;
+    }
+       @include respond(900p) {
+        margin-left: 1rem;
+    }
+        @include respond(750p) {
+        margin-left: 12rem;
+    }
+        @include respond(600p) {
+        margin-left: 5.2rem;
+    }
+        @include respond(450p) {
+        margin-left: 2rem;
+    }
+        @include respond(380p) {
+        margin-left: 2rem;
+    }
+   
+        &--list {
+            list-style: none;
+        }
+    }
+    &__hours {
+        float: right;
+        margin-right: 7rem;
+        @include respond(900p) {
+            margin-right: 1rem;
+        }
+        @include respond(750p) {
+            margin-right: 12rem;
+        }
+        @include respond(600p) {
+            margin-right: 5.2rem;
+        }
+        @include respond(450p) {
+            margin-right: 2rem;
+        }
+        @include respond(380p) {
+            margin-right: 2rem;
+        }
+        &--list {
+            list-style: none;
+            word-spacing: 1.5rem;
+        }
+    }
+    &__days-hours{
+        font-size: 2.4rem;
+        font-weight: 100;
+        @include respond(750p) {
+            font-size: 2.2rem;
+        }
+        @include respond(450p) {
+            font-size: 2rem;
+        }
+    }
+}
+

@@ -1,0 +1,21 @@
+.u-center-text { text-align: center;}
+.u-margin-bottom-big { 
+    margin-bottom: 8rem;
+    @include respond(750p) {
+        margin-bottom: 5rem;
+    }
+    @include respond(450p) {
+        margin-bottom: 4rem;
+    }
+}
+.u-margin-bottom-small { margin-bottom: 1rem;}
+.u-margin-bottom-medium { 
+    margin-bottom: 2rem;
+    @include respond(750p) {
+        margin-bottom: 1rem;
+    }
+    @include respond(450p) {
+        margin-bottom: 0rem;
+    }
+}
+.u-margin-bottom-smallish { margin-bottom: 2rem;}
